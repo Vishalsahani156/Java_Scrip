@@ -1,3 +1,31 @@
 body{
-    background-color: black;
+    background-color: aqua;
+}
+ #result{
+ border: solid red 5px;
+  border: 4px; 
+  content: normal;
+} 
+
+form{
+  contain: content;
+
+}
+#hight{
+  border:  solid 4px black;
+   border-radius: 2px;
+   padding: 10px;
+}
+#weight{
+  border: solid 4px black;
+  border-radius: 2px ;
+  padding: 10px;
+  
+}
+button{
+  border: solid black;
+  padding: 5px;
+  padding-right:  50px;
+  border-radius: 2px;
+
 }
