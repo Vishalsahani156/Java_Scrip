@@ -1,0 +1,43 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    width: 300px;
+    max-width: 750px;
+    margin: auto;
+    background-color: aqua;
+fi
+}
+.homecolor{
+    color: wheat;
+    padding: 7px;
+
+
+}
+.gusse{
+    color: wheat;
+    padding: 7px;
+
+}
+button{
+    background-color:  black;
+    color: wheat;
+    width: 250px ;
+    height: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin: top 30px;
+
+
+}
+#subt{
+   background-color: black;
+color: white;
+width: 200px;
+height: 50px;
+border-radius: 10px;
+font-size: 20px;
+border-style: none;
+margin-top: 50px;
+
+}
