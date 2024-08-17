@@ -6,17 +6,19 @@ body{
     max-width: 750px;
     margin: auto;
     background-color: aqua;
-fi
+
 }
 .homecolor{
     color: wheat;
     padding: 7px;
 
 
+
 }
-.gusse{
+.gusses{
     color: wheat;
     padding: 7px;
+    font-size: 40px;
 
 }
 button{
@@ -29,6 +31,21 @@ button{
     margin: top 30px;
 
 
+}
+#gusse{
+     
+     font-size: 30px;
+     border-style: none;
+     margin-top: 35px;
+
+}
+
+#gusseField{
+    background-color: wheat;
+    color: black;
+    padding: top;
+    margin-top: 30px;
+    border-style: non;
 }
 #subt{
    background-color: black;
