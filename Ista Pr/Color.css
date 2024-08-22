@@ -1,0 +1,34 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    display: flex;
+        align-items: center;
+ justify-content: center;
+}
+#containar{
+    height: 400px;
+    width: 300px;
+    background-color: aliceblue;
+   border-radius: 10px;
+}
+#containar img {
+ height: 60%;
+ width: 100%;
+ object-fit:cover;
+ object-position: center;
+ border-radius: 10px;
+ overflow: hidden;
+
+}
+#containar i{
+background-color: blue;
+font-size: 60px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%) 
+scale(0);
+
+transition: transfrom ease 0.5s;
+}

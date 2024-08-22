@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envent_in_Js</title>
+</head>
+
+<body style="background-color: black;color: wheat;">
+    <h2>Amazing image </h2>
+    <div>
+        <ul id="images1">
+        <li><img width="200px" id="photoshop"
+                src="https://images.pexels.com/photos/15045077/pexels-photo-15045077/free-photo-of-women-in-dresses-on-desert.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="photoshop" </li>
+        <li><img width="200px" id="photo1"
+                src="https://images.pexels.com/photos/18802955/pexels-photo-18802955/free-photo-of-kids-playing-soccer.png?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="" </li>
+        <li><img width="200px" id="photo2"
+                src="https://images.pexels.com/photos/27383282/pexels-photo-27383282/free-photo-of-brunette-in-corduroy-pants.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="" </li>
+        <li><img width="200px" id="photo3"
+                src="https://images.pexels.com/photos/15968918/pexels-photo-15968918/free-photo-of-portrait-of-woman.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="" </li>
+        <li><img width="200px" id="photo4"
+                src="https://images.pexels.com/photos/16446647/pexels-photo-16446647/free-photo-of-bride-and-groom-standing-on-a-meadow-in-sunlight-and-smiling.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="" </li>
+
+        <li> <img width="200px" id="photo5"
+                src="https://images.pexels.com/photos/17012085/pexels-photo-17012085/free-photo-of-daisy-with-a-little-bug-on-the-petals.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="" </li>
+                <li><a style="color: aliceblue;" href="https://www.google.com/search?q=googl+.com&oq=googl+.com&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIPCAEQABgKGIMBGLEDGIAEMgwIAhAAGAoYsQMYgAQyDAgDEAAYChixAxiABDIJCAQQABgKGIAEMg8IBRAAGAoYgwEYsQMYgAQyBggGEEUYQDIGCAcQRRg80gEKMTYyMjNqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8" id="googl">googl</a></li>
+            </ul>
+    </div>
+</body>
+<script>
+    document.getElementById('images1').addEventListener("click",function(e){
+        console.log("click the ul in the out side");
+    })
+
+// document.getElementById('photo1').addEventListener("click",function(e){
+//     console.log("click the inhher side in the  photo 1 ");
+//     // alert("on the photo 1 ");
+//     // console.log(e);
+//     e.stopImmediatePropagation();
+// })
+document.getElementById('googl').addEventListener('click',function(e){
+e.preventDefault();
+console.log(" click on the google ");
+    
+})
+document.querySelector('#images1').addEventListener('click',function(e){
+  
+    // console.log(e.target);
+    console.log(e.target.parentNode);
+    console.log(e.target.id);
+    let remove1=e.target.parentNode;
+    remove1.remove();
+
+ },false)
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; color: white;">
+    <h1> Hello from chai or code in you tub</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const start = document.getElementById('start');
+    const stop = document.getElementById('stop');
+    const stor = function () {
+        console.log(" hello hello");
+    }
+    const ref = setInterval(stor, 2000);
+    start.addEventListener("click", function () {
+        setInterval(ref);
+        console.log(" on the start button");
+    })
+    stop.addEventListener('click', function () {
+        clearInterval(ref);
+        console.log(" close the stop buttom");
+    })
+</script>
+
+</html>
