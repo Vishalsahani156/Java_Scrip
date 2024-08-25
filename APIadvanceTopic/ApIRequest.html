@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apirequstey</title>
+</head>
+<style>
+    /* This is the use of inner css */
+    body {
+        background-color: black;
+        color: wheat;
+    }
+
+    h1 {
+        background-color: aqua;
+        color: black;
+
+    }
+</style>
+
+<body>
+    <h1>Hello js code</h1>
+
+    <!-- <h2>Value	State	Description
+        0	UNSENT	Client has been created. open() not called yet.
+        1	OPENED	open() has been called.
+        2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+        3	LOADING	Downloading; responseText holds partial data.
+        4	DONE	The operation is complete.</h2> -->
+</body>
+<script>
+
+    const reuesturl = 'https://api.github.com/users/Vishalsahani156';
+    const shr = new XMLHttpRequest();
+    shr.open('GET', reuesturl)
+    shr.onreadystatechange = function () {
+        console.log(shr.readyState)
+        if (shr.readyState === 4) {
+            console.log(this.responseText);
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+            console.log(data.login);
+            console.log(data.following);
+            console.log(data.location);
+        }
+
+    }
+    shr.send()
+
+</script>
+
+</html>
