@@ -45,9 +45,9 @@ const p4 = new Promise(function (resolve, reject) {
 console.log(" THIS IS THE RUN THE PROMISE FIVE ");
 const p5 = new Promise(function (resolve, reject) {
     setTimeout(() => {
-        let data = false;
-        if (!data) {
-            resolve({ st: 'nepal', st1: 'UP' });
+        let d= false;
+        if (!d) {
+            resolve({ st: "nepal", st1: "UP"});
         }
         else {
             reject({ erro: "EERRO Ocuure" });
@@ -68,25 +68,25 @@ p5
     .finally(()=>{
         console.log(" you are work in the done ");
     })
-const plast=new Promise(function(resolve,reject){
+const plast= new Promise(function(resolve,reject){
     setTimeout(function(){
         let data=true;
         if(!data){
-            resolve({c:'javascript',c1:'java'})
+            resolve({username:"javaScript",password:"123"})
         }
         else{
-            reject({e:'error the file js '})
+         reject('ERROR:Js went wrong')
         }
     },1000)
-})
-async function stor(){
+});
+async function stor1(){
     try{
-    const response=await plast;
+    const response=await plast
     console.log(response);
     }
     catch(e){
-        console.lof(e);
-        console.log("handle the erroe with the file of the js ");
+        console.log(e);
+        // console.log("handle the erroe with the file of the js ");
     }
-
 }
+
